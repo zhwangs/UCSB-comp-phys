@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Section 6B, to lemma and Stratonovich formulation, Autocorrelation, Langevin equation - UCSB-129-comp-phys</title>
+    <title>Monte Carlo integration, Random Number Generators, Box–Muller transform, inverse transform, Rejection Sampling, importance sampling - UCSB-129-comp-phys</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Section 6B, to lemma and Stratonovich formulation, Autocorrelation, Langevin equation";
-        var mkdocs_page_input_path = "section6B.md";
+        var mkdocs_page_name = "Monte Carlo integration, Random Number Generators, Box\u2013Muller transform, inverse transform, Rejection Sampling, importance sampling";
+        var mkdocs_page_input_path = "lecture7B.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -75,8 +75,12 @@
                 <li class="toctree-l1"><a class="reference internal" href="../lecture7A/">Bayesian Inference, Frequentist, Fisher Information</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../lecture7B/">Monte Carlo integration, Random Number Generators, Box–Muller transform, inverse transform, Rejection Sampling, importance sampling</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Monte Carlo integration, Random Number Generators, Box–Muller transform, inverse transform, Rejection Sampling, importance sampling</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#lecture-notes-pseudo-random-number-generators-linear-congruential-generator-quasi-random-number-generators-sobol-sequence-inverse-transform-sampling-boxmuller-transform-rejection-sampling-monte-carlo-integration-importance-sampling-regularization">Lecture Notes: Pseudo-Random Number Generators, Linear congruential generator, Quasi-Random Number Generators, Sobol sequence, Inverse Transform Sampling, Box–Muller transform, Rejection Sampling, Monte Carlo integration, importance sampling, regularization.</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -107,12 +111,8 @@
                 <li class="toctree-l1"><a class="reference internal" href="../section6A/">Section 6A, Poisson, Lorentzian, Revisit the Heisenberg XXX Hamiltonian on a Ring, Markov Chain</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Section 6B, to lemma and Stratonovich formulation, Autocorrelation, Langevin equation</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#week6-worksheet-due-feb-22-1159pm">Week6 worksheet. Due Feb 22, 11:59PM</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../section6B/">Section 6B, to lemma and Stratonovich formulation, Autocorrelation, Langevin equation</a>
                 </li>
               </ul>
               <ul>
@@ -157,7 +157,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Section 6B, to lemma and Stratonovich formulation, Autocorrelation, Langevin equation</li>
+      <li class="breadcrumb-item active">Monte Carlo integration, Random Number Generators, Box–Muller transform, inverse transform, Rejection Sampling, importance sampling</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -166,15 +166,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <div><h1 id="section-worksheets">Section Worksheets</h1>
-<h2 id="week6-worksheet-due-feb-22-1159pm">Week6 worksheet. Due Feb 22, 11:59PM</h2>
-<p><embed alt="Alt text" src="../data/sections/Section_worksheet_Week6B.pdf" style="min-height:100vh;width:100%" type="application/pdf"></embed></p></div>
+                <div><h1 id="readings-and-lectures-notes">Readings and Lectures Notes</h1>
+<!-- ## Week6 Reading -->
+
+<h2 id="lecture-notes-pseudo-random-number-generators-linear-congruential-generator-quasi-random-number-generators-sobol-sequence-inverse-transform-sampling-boxmuller-transform-rejection-sampling-monte-carlo-integration-importance-sampling-regularization">Lecture Notes: Pseudo-Random Number Generators, Linear congruential generator, Quasi-Random Number Generators, Sobol sequence, Inverse Transform Sampling, Box–Muller transform, Rejection Sampling, Monte Carlo integration, importance sampling, regularization.</h2>
+<p><embed alt="Alt text" src="../data/lecture/sampling.pdf" style="min-height:100vh;width:100%" type="application/pdf"></embed></p></div>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../section6A/" class="btn btn-neutral float-left" title="Section 6A, Poisson, Lorentzian, Revisit the Heisenberg XXX Hamiltonian on a Ring, Markov Chain"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../section7A/" class="btn btn-neutral float-right" title="Section 7A, Frequentist, Bayesian Inference,  Stirling’s approximation, Bootstrapping,">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../lecture7A/" class="btn btn-neutral float-left" title="Bayesian Inference, Frequentist, Fisher Information"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../section/" class="btn btn-neutral float-right" title="Section 1, Git and Github">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -197,10 +199,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../section6A/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../lecture7A/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../section7A/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../section/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
